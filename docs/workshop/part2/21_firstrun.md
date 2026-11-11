@@ -775,7 +775,7 @@ You’ve now built the scaffolding needed to begin fine-tuning your resource req
             // Run using the slurm scheduler on the 'work' partition
             executor = 'slurm'
             queue = 'work'
-            clusterOptions = "--account=${System.getenv('PAWSEY_PROJECT')} --reservations=NextflowHPC"
+            clusterOptions = "--account=${System.getenv('PAWSEY_PROJECT')} --reservation=NextflowHPC"
             cache = 'lenient'
             stageInMode = 'symlink'
         }
